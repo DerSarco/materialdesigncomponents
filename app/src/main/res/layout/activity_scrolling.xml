@@ -11,7 +11,7 @@
 <!--    contenedor especializado en cabeceras-->
 
 
-    <include layout="@layout/content_scrolling" />
+    <include android:id="@+id/content" layout="@layout/content_scrolling" />
 
 <!--    Bottom bar para agregar botones para menú-->
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -22,6 +22,7 @@
         app:navigationIcon="@drawable/ic_menu"
         app:menu="@menu/menu_scrolling"
         app:hideOnScroll="true"
+        app:fabAnimationMode="slide"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         />
 

@@ -96,4 +96,14 @@
     <string name="card_input_url">image URL</string>
     <string name="card_required">Required</string>
     <string name="card_password">Password</string>
+    <string name="card_input_enablePass">Enable Password</string>
+    <string name="card_toggle_red">Red</string>
+    <string name="card_toggle_blue">Blue</string>
+    <string name="card_toggle_green">Green</string>
+    <string name="card_btn_skip">Skip</string>
+    <string name="message_action_success">Evento exitoso!</string>
+    <string name="card_buy_message">Comprado!</string>
+    <string name="card_to_go">go</string>
+    <string name="card_historial">Historial</string>
+    <string name="card_invalid_url">Invalid URL</string>
 </resources>
