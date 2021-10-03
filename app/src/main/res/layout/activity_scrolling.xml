@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--se encarga de coordinar sus hijos para que funcionen sus efectos, diseños etc-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivity">
+
+<!--    contenedor especializado en cabeceras-->
+
+
+    <include layout="@layout/content_scrolling" />
+
+<!--    Bottom bar para agregar botones para menú-->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:navigationIcon="@drawable/ic_menu"
+        app:menu="@menu/menu_scrolling"
+        app:hideOnScroll="true"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_add"
+    app:layout_anchor="@id/bottom_app_bar"
+    android:contentDescription="@string/add_task"
+    />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
